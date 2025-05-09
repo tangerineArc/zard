@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+
+  <title>CSV to VCF</title>
+</head>
+
+<body>
+  <h1>CSV to VCF</h1>
+
+  <main>
+    <label>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-file-spreadsheet-icon lucide-file-spreadsheet">
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+        <path d="M8 13h2" />
+        <path d="M14 13h2" />
+        <path d="M8 17h2" />
+        <path d="M14 17h2" />
+      </svg>
+      <input type="file" id="csvFileInput" accept=".csv" placeholder="CSV file">
+    </label>
+    <button id="downloadBtn">Download vCard</button>
+
+    <div>
+      <p>CSV file should have the following order of columns:</p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arya</td>
+            <td>Stark</td>
+            <td>arya.wolf@wintermail.com</td>
+            <td>+1-555-723-1987</td>
+          </tr>
+          <tr>
+            <td>Tyrion</td>
+            <td>Lannister</td>
+            <td>tyrion.drinks@casterwine.org</td>
+            <td>+1-555-881-0042</td>
+          </tr>
+          <tr>
+            <td>Daenerys</td>
+            <td>Targaryen</td>
+            <td>dany.dragons@valyriamail.net</td>
+            <td>+1-555-334-2021</td>
+          </tr>
+          <tr>
+            <td>Jon</td>
+            <td>Snow</td>
+            <td>jon.noone@nightswatch.io</td>
+            <td>+1-555-110-9987</td>
+          </tr>
+          <tr>
+            <td>Cersei</td>
+            <td>Lannister</td>
+            <td>cersei.queen@redkeep.biz</td>
+            <td>+1-555-667-3045</td>
+          </tr>
+          <tr>
+            <td>Samwell</td>
+            <td>Tarly</td>
+            <td>sam.reader@citadel.ac</td>
+            <td>+1-555-309-2468</td>
+          </tr>
+          <tr>
+            <td>Theon</td>
+            <td>Greyjoy</td>
+            <td>theon.reek@ironisles.net</td>
+            <td>+1-555-900-3321</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    Made with JavaScript by <a href="https://github.com/tangerineArc">Swagatam</a>
+  </footer>
+</body>
+
+</html>
